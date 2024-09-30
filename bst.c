@@ -51,3 +51,21 @@ The node to be deleted has two children
 DELETING NODE Z HAS TWO CHILDREN AND SUCESSOR Z = Z.RIGHT
 
 */
+
+/*
+
+function deleteNodeWithSuccessorRight(z):
+    y = z.right //this means the successor of z is its right child
+
+    //replace z with its right child.
+    transplant(z,y)
+
+    //move z-left subtree under y the successor
+    y.left = z.left
+    if z.left != null
+    z.left.parent = y
+
+    end function
+
+
+*/
