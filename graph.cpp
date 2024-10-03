@@ -49,3 +49,23 @@ Step:
     - Start from the smallest edge and add it to the MST, as long as it doesn't form a cycle
     - Repeat until the MST contains V-1 edges, where V is the number of vertices.
 */
+
+function BellmanFord(graph, V, source):
+    # Step 1: Initialize distances
+    distance = [infinity] * V  # Distance to all vertices is initially infinity
+    distance[source] = 0       # Distance to the source is 0
+
+    # Step 2: Relax all edges V-1 times
+    for i = 1 to V-1:
+        for each edge (u, v, weight) in graph:
+            if distance[u] + weight < distance[v]:
+                distance[v] = distance[u] + weight
+
+    # Step 3: Check for negative weight cycles
+    for each edge (u, v, weight) in graph:
+        if distance[u] + weight < distance[v]:
+            print("Graph contains a negative weight cycle")
+            return
+
+    # Step 4: Return the shortest distances
+    return distance

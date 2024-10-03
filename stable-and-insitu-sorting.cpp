@@ -1,10 +1,10 @@
 /*
 Stable sorting Algorithm
-An algorithm is stable if it ensures that for all elements i and j in an array where i < j and A[i]=A[j], the position of A[i] will come first before the position of A[j]
+An algorithm is stable if it ensures that for all elements i and j in an input array where i < j and A[i]=A[j], the position of A[i] will come first before the position of A[j]
 in the output array.
 
 In-situ sorting algorithm (in-place) this algorithm operates directly on the input data and require 0(1) additional memory. it doesn't uses any significant additional 
-memory for for sorting.
+memory for sorting.
 
 The above array uses additional arrays C[] and B[]
 */

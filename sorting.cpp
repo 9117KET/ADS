@@ -35,7 +35,7 @@ AFter the loop completes, the pivot is swapped with the element at position i
 
 /*
 Q1: Create an array containing the value 1,2,3,4,5,6 such that the quicksort algorithm performs the most swaps.
-Strategy: In the worst-case scenario for quicksort, the algorithm performs the most swaps when it repeatedly choooses the smaller or largest element as the pivot. In this case
+Strategy: In the worst-case scenario for quicksort, the algorithm performs the most swaps when it repeatedly chooses the smaller or largest element as the pivot. In this case
 the array should be reverse sorted (ie, in descending order) so that every partitioning step forces multiple swaps to happen.
 
 Q2: How many function calls of quicksort are performed?
@@ -52,7 +52,7 @@ array is in descending order, as more elements will be needed to be swapped to p
 */
 
 /*
-For an array of size n=6, the total number of swaps in the worst case will be n-1, n-2, n-3...2,1
+For an array of size n=6, the total number of swaps in the worst case will be n-1 + n-2 + n-3 + ... + 2 + 1
 n=6 we will have 
 6+5+4+3+2+1=15
 */

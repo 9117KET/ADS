@@ -1,7 +1,4 @@
-//Defination
-/*
-A function is feature in cpp that allows functions and classes to operate with generic types enabling them to work on different data types
-without being rewritten */
+//Definition
 
 /*
 A template function is a generic function that can work with any data type, it is define using the template keyword follow by template parameter
@@ -90,7 +87,7 @@ T compAvg(T arr[], int n){
 cout << compAvg<float>(arr, '5') << endl;
 //'5' is a char instead of an int
 cout << compAvg(arr, 5) << endl;
-// this is correct because regardless of spicifying the type or not, the compiler can inteligently deduce the type from the template argument
+// this is correct because regardless of specifying the type or not, the compiler can intelligently deduce the type from the template argument
 cout << compAvg<int>(arr, 5) << endl;
 //function call specifies int instead of float
 cout << compAvg<float>(arr, 5) << endl;
@@ -129,6 +126,7 @@ T countValue(T arr[], int n, T value) {
     return count;
 }
 //incorrect because count is declared as type T, which is incorrect since it should be an int indicating the number of matches
+//also, the countValue is int not type of T
 
 template <typename T>
 int countValue(T arr[], T n, int value) {
