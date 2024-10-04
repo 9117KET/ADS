@@ -14,7 +14,7 @@ Linear DS: elements are arranged in a sequential manner and each element is conn
 Non-Linear DS: No sequential form of elements, elements may have multiple relations between each other
     Example:
         Trees: A hierarchical structure consisting of nodes, with each node having zero or multiple child node
-            Binary Tree: a tree where ach node has at most two children
+            Binary Tree: a tree where each node has at most two children
             Binary Search Tree: A binary tree where the left child node's value is less than the parent, and the right child nodes is greater than the parent
             AVL Trees: A self-balancing search tree.
         Graphs: A collection of nodes (vertices) connected by edges, graphs can be directed or undirected and can represent networks, such as social connections or routing paths

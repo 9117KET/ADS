@@ -24,6 +24,7 @@ A RBT is a special type of BST that adds extra properties to ensure the tree rem
 - No two red nodes can be adjacent (red node cannot have red children)
 - Every path from a given node to its descendant NULL nodes (or leaf nodes) must have the same number of black node (black height)
 - New node are inserted as red node
+- Must obey the BST property
 */
 
 /*

@@ -53,8 +53,9 @@ array is in descending order, as more elements will be needed to be swapped to p
 
 /*
 For an array of size n=6, the total number of swaps in the worst case will be n-1 + n-2 + n-3 + ... + 2 + 1
+sum=((n-1)n)/2
 n=6 we will have 
-6+5+4+3+2+1=15
+5+4+3+2+1=15
 */
 
 /*
